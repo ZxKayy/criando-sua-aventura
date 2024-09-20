@@ -10,9 +10,10 @@
     <title>Em busca da cidade perdida</title>
     <style>
         body {
-            background-color: #f0f8ff;
-            color: #333;
             font-family: 'Bai Jamjuree', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
         .passo {
             text-align: center;
@@ -20,11 +21,7 @@
             padding: 20px;
             border: 2px solid #4682b4;
             border-radius: 10px;
-            background-color: #e6f7ff;
             transition: background-color 0.3s;
-        }
-        .passo:hover {
-            background-color: #cceeff;
         }
         .btn-proximo {
             margin: 10px;
@@ -40,74 +37,116 @@
         .btn-proximo:hover {
             background-color: #5a9bd4;
         }
+        
+        /* Estilos para cada passo */
+        #passo-0 {
+            background-color: #ffcccc; /* Vermelho claro */
+        }
+        #passo-1 {
+            background-color: #000000; /* Preto */
+            color: #fff; /* Texto branco */
+        }
+        #passo-2 {
+            background-color: #add8e6; /* Azul claro */
+        }
+        #passo-3 {
+            background-color: #ffe4b5; /* Bege claro */
+        }
+        #passo-4 {
+            background-color: #d3d3d3; /* Cinza claro */
+        }
+        #passo-5 {
+            background-color: #fafad2; /* Amarelo claro */
+        }
+        #passo-6 {
+            background-color: #ffb6c1; /* Rosa claro */
+        }
+        #passo-7 {
+            background-color: #e6e6fa; /* Lavanda */
+        }
+        #passo-8 {
+            background-color: #98fb98; /* Verde claro */
+        }
+        #passo-9 {
+            background-color: #ffcccb; /* Vermelho claro */
+        }
+        #passo-10 {
+            background-color: #add8e6; /* Azul claro */
+        }
+        #passo-11 {
+            background-color: #ffe4e1; /* Rosa claro */
+        }
+        #passo-12 {
+            background-color: #f0e68c; /* Khaki */
+        }
     </style>
 </head>
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
             <img src="imagem/cenario-passo0.png" alt="">
-            <p>Em um dia qualquer, enquanto explorava os livros da biblioteca da escola, deparei-me com uma carta antiga e enigmática que falava sobre uma cidade perdida, adornada por tesouros e belezas naturais. A autora da carta deixou pistas escondidas sobre como encontrar esse lugar mágico, e a curiosidade me fez decidir seguir cada uma delas!</p>
+            <p>Em um dia qualquer, enquanto explorava os livros da biblioteca da escola, deparei-me com uma carta antiga e enigmática que falava sobre uma cidade perdida, adornada por tesouros e belezas naturais. A autora da carta deixou pistas intrigantes sobre como encontrar esse lugar mágico, e a curiosidade me fez decidir seguir cada uma delas com grande entusiasmo!</p>
             <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
             <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
         <div class="passo" id="passo-1">
-            <p>Você inicia sua aventura no vibrante Rio de Janeiro, decidido a escalar o Pico da Tijuca ao amanhecer. A expectativa de encontrar a primeira pista enche seu coração de esperança.</p>
+            <p>Você inicia sua emocionante aventura no vibrante Rio de Janeiro, determinado a escalar o Pico da Tijuca ao amanhecer. A expectativa de encontrar a primeira pista faz seu coração acelerar, e você se sente preparado para o que está por vir.</p>
             <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
         <div class="passo" id="passo-2">
-            <p>Chegando a Pernambuco, você se aventura pela histórica cidade de Olinda. A carta sugere que a próxima pista está escondida em um dos muitos pontos turísticos da cidade. Qual local você escolherá explorar primeiro?</p>
+            <p>Ao chegar a Pernambuco, você se aventura pela histórica cidade de Olinda, cheia de cultura e charme. A carta sugere que a próxima pista está escondida em um dos muitos pontos turísticos da cidade. Qual local fascinante você escolherá explorar primeiro?</p>
             <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
             <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
         </div>
         <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, a vista é de tirar o fôlego e você encontra uma antiga inscrição que indica que a próxima pista te levará até a vasta e misteriosa floresta do Amazonas.</p>
+            <p>Ao alcançar o topo do Pico da Tijuca, a vista é de tirar o fôlego e você encontra uma antiga inscrição que revela que a próxima pista te levará até a vasta e misteriosa floresta do Amazonas. O espírito aventureiro dentro de você se agita!</p>
             <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
         </div>
 
         <div class="passo" id="passo-4">
             <img src="imagem/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
-            <p>Ao decidir que a aventura é demasiada ousada, você retorna para casa, mas o desejo de descobrir o que poderia ter encontrado permanece vivo em sua mente.</p>
+            <p>Ao decidir que a aventura é demasiada ousada, você retorna para casa, mas o desejo de descobrir o que poderia ter encontrado permanece vivo em sua mente. A dúvida e a curiosidade sempre o acompanharão.</p>
         </div>
 
         <div class="passo" id="passo-5">
-            <p>Dentro das igrejas de Olinda, você se depara com um mapa antigo escondido atrás de um altar, que revela que a próxima pista está também no fascinante Amazonas. A excitação toma conta de você!</p>
+            <p>Dentro das igrejas de Olinda, você se depara com um mapa antigo escondido atrás de um altar, que revela que a próxima pista está também no fascinante Amazonas. A excitação toma conta de você, e seu coração bate mais rápido com essa nova descoberta!</p>
             <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
         </div>
 
         <div class="passo" id="passo-6">
-            <p>Ao explorar as praias deslumbrantes, você descobre uma caverna oculta. Contudo, ao entrar, percebe que se trata de um beco sem saída. O que você fará agora?</p>
+            <p>Ao explorar as praias deslumbrantes, você descobre uma caverna oculta. Contudo, ao entrar, percebe que se trata de um beco sem saída. A frustração surge, mas você sabe que cada passo faz parte da jornada. O que você fará agora?</p>
             <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
         </div>
 
         <div class="passo" id="passo-7">
-            <p>Ao chegar no Amazonas, a busca pela cidade perdida se intensifica. Diante de você, um rio bifurcado oferece duas direções. Qual caminho você escolherá?</p>
+            <p>Ao chegar no Amazonas, a busca pela cidade perdida se intensifica. Diante de você, um rio bifurcado oferece duas direções intrigantes. Qual caminho misterioso você escolherá para continuar sua jornada?</p>
             <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
             <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
         </div>
 
         <div class="passo" id="passo-8">
-            <p>Retornando para as igrejas de Olinda, você finalmente encontra o mapa antigo que revela o caminho para o Amazonas. A aventura está prestes a recomeçar!</p>
+            <p>Retornando para as igrejas de Olinda, você finalmente encontra o mapa antigo que revela o caminho para o Amazonas. A aventura está prestes a recomeçar, e seu espírito explorador se renova a cada instante!</p>
             <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
         </div>
 
         <div class="passo" id="passo-9">
-            <p>O rio à esquerda o leva a uma magnífica cachoeira escondida, onde você encontra inscrições antigas que revelam o caminho para a entrada da cidade perdida. A emoção é indescritível!</p>
+            <p>O rio à esquerda o leva a uma magnífica cachoeira escondida, onde você encontra inscrições antigas que revelam o caminho para a entrada da cidade perdida. A emoção é indescritível e a promessa de novas descobertas o motiva ainda mais!</p>
             <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
         </div>
 
         <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar das vistas deslumbrantes, você percebe que não há sinais da cidade perdida por aqui. O que fazer agora?</p>
+            <p>O rio à direita termina em uma área pantanosa. Apesar das vistas deslumbrantes, você percebe que não há sinais da cidade perdida por aqui. A frustração surge, mas você sabe que o verdadeiro tesouro é a jornada em si. O que fará agora?</p>
             <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
         </div>
 
         <div class="passo" id="passo-11">
             <img src="imagem/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da magnífica cidade perdida, você se depara com tesouros inimagináveis e decide se dedicar a estudar e preservar este lugar incrível e cheio de histórias.</p>
+            <p>Dentro da magnífica cidade perdida, você se depara com tesouros inimagináveis e decide se dedicar a estudar e preservar este lugar incrível e cheio de histórias que esperavam ser contadas. Sua aventura finalmente atinge seu ápice!</p>
         </div>
 
         <div class="passo" id="passo-12">
-            <p>Ao retornar e escolher o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições que levam à cidade perdida. A aventura está ao seu alcance!</p>
+            <p>Ao retornar e escolher o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições que levam à cidade perdida. A aventura está ao seu alcance e sua determinação o leva a um novo começo!</p>
             <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
         </div>
     </main>
